@@ -20,14 +20,14 @@ SUPPORT_GRP:str = os.environ.get("SUPPORT_GRP", "Looters_Money_Trick")
 #get it from @username_to_id_bot this bot 
 
 log_channel = int(os.environ.get("LOG_CHANNEL", "-1001933029304"))
-OWNER_ID=5597521952
+OWNER_ID=1807927334
 
 
 # search on youtube "how to create mongodburl""
 
 MONGO_DB_URI:str = os.environ.get(
     "MONGO_DB_URI",
-    "")
+    "mongodb+srv://Storm72:khan7860@cluster0.udehz9j.mongodb.net/?retryWrites=true&w=majority")
 	
 
 # all channels list you can add more 
