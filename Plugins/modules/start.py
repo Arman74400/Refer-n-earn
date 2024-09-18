@@ -44,8 +44,9 @@ async def must_join_channel(bot: Client, msg):
         except UserNotParticipant:
             # Generate dynamic buttons for channels
             links = [
-                "https://t.me/channel1",  # Add actual links here
-                "https://t.me/channel2",
+                "https://t.me/Crypto_Loot_AK",  # Add actual links here
+                "https://t.me/Looters_Money_Trick",
+                "https://t.me/myank_Real_Earn",
                 # Add more channel links as needed
             ]
             buttons = []
