@@ -2,9 +2,9 @@ import os
 from pyrogram.types import KeyboardButton, InlineKeyboardMarkup,InlineKeyboardButton,WebAppInfo,ReplyKeyboardMarkup
 
 #get from https://my.telegram.org/auth
-API_ID:int =(os.environ.get("API_ID",21714376))
-API_HASH:str = os.environ.get("API_HASH", "700092e37d7da9a7b781994b7503a4")
-BOT_TOKEN:str = os.environ.get("BOT_TOKEN", "")
+API_ID:int =(os.environ.get("API_ID",27498647))
+API_HASH:str = os.environ.get("API_HASH", "f7764b70861584bca951040781111bfb")
+BOT_TOKEN:str = os.environ.get("BOT_TOKEN", "6770406589:AAFzxvc7IwyoPGAynm4oJ5QCJZg1_TAktOA")
 
 
 REFER_BONUS=int(1)
@@ -14,12 +14,12 @@ WITHDRAWAL=int(2)
 
 
 #username without @
-UPDATE_CHNL:str = os.environ.get("UPDATE_CHNL", "jn_bots")
-SUPPORT_GRP:str = os.environ.get("SUPPORT_GRP", "-1002195994803")
+UPDATE_CHNL:str = os.environ.get("UPDATE_CHNL", "Crypto_Loot_AK")
+SUPPORT_GRP:str = os.environ.get("SUPPORT_GRP", "Looters_Money_Trick")
 
 #get it from @username_to_id_bot this bot 
 
-log_channel = int(os.environ.get("LOG_CHANNEL", "-1001918482012"))
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1001933029304"))
 OWNER_ID=5597521952
 
 
@@ -31,7 +31,7 @@ MONGO_DB_URI:str = os.environ.get(
 	
 
 # all channels list you can add more 
-links = ["https://t.me/jn_bots", "https://t.me/jn_family", "https://t.me/channel3"]
+links = ["https://t.me/Crypto_Loot_AK", "https://t.me/Looters_Money_Trick", "https://t.me/myank_Real_Earn"]
 
 
 
