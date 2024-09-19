@@ -83,7 +83,7 @@ async def must_join_channel(bot: Client, msg):
 @JN.on_message(filters.regex('〄 ᴍᴀɪɴ ᴍᴇɴᴜ 〄') & filters.private)
 async def main_menu_handler(bot, message):
     
-    caption = f"Hello {message.from_user.first_name},\n\n🏡 Welcome To UPI Giveaway Bot!, ʜᴇʀᴇ ʏᴏᴜ cᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by: <a href='https://t.me/Ak74400/'>AK</a>"
+    caption = f"Hello {message.from_user.first_name},\n\n🏡 Welcome To UPI Giveaway Bot!\n\nʜᴇʀᴇ ʏᴏᴜ cᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by: <a href='https://t.me/Ak74400/'>AK</a>"
     
     await JN.send_photo(message.chat.id, photo=start_img2, caption=caption, reply_markup=main_button)
     await message.delete()
