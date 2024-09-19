@@ -47,6 +47,7 @@ async def must_join_channel(bot: Client, msg):
                 "https://t.me/Crypto_Loot_AK",  # Add actual links here
                 "https://t.me/Looters_Money_Trick",
                 "https://t.me/myank_Real_Earn",
+                "https://t.me/Earning_Loots08",
                 # Add more channel links as needed
             ]
             buttons = []
@@ -62,7 +63,7 @@ async def must_join_channel(bot: Client, msg):
             # Adding the 'Joined' button dynamically with bot's start link
             bot_username = (await bot.get_me()).username
             start_link = f"https://t.me/{bot_username}?start"
-            buttons.append([InlineKeyboardButton("Joined", url=start_link)])
+            buttons.append([InlineKeyboardButton("🔒 Claim", url=start_link)])
 
             try:
                 await msg.reply_photo(
