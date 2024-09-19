@@ -7,8 +7,8 @@ API_HASH:str = os.environ.get("API_HASH", "f7764b70861584bca951040781111bfb")
 BOT_TOKEN:str = os.environ.get("BOT_TOKEN", "6770406589:AAFzxvc7IwyoPGAynm4oJ5QCJZg1_TAktOA")
 
 
-REFER_BONUS=int(1)
-NEW_USER_BONUS=int(1)
+REFER_BONUS=int(2)
+NEW_USER_BONUS=int(2)
 #minimum withdrawal amount
 WITHDRAWAL=int(10) 
 
