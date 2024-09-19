@@ -16,7 +16,7 @@ async def get_referral_link(client, message):
     document = collection.find_one({"user_id": message.from_user.id})
     user_id = message.from_user.id
     total=document.get("total_refer")
-    referral_link = f"ɴᴀᴍᴇ : {message.from_user.mention}\ntotal refer : {total}\n\nʏᴏᴜʀ ʀᴇꜰᴇʀ ʟɪɴᴋ: https://t.me/{JN.username}?start={user_id}"
+    referral_link = f"ɴᴀᴍᴇ : {message.from_user.mention}\ntotal refer : {total}\n\n💰 Per Refer Rs.2 Upi Cash\n\n👤Your Refferal Link: https://t.me/{JN.username}?start={user_id}\n\nShare With Your Friend's & Family And Earn Refer Bonus Easily ✨🤑"
     referral_link2 = f"https://telegram.me/share/url?url=t.me/{JN.username}?start={user_id}"
     await message.reply(f"{referral_link}",reply_markup=InlineKeyboardMarkup([
         [InlineKeyboardButton("share url ",url=referral_link2)] 
