@@ -40,7 +40,7 @@ async def dice(bot, message):
         return
 
     if balance < amount:
-        await message.reply_text("Insufficient balance. Please enter a valid amount.", reply_markup=all_platform)
+        await message.reply_text("Insufficient balance. Share With Your Friend's & Family And Earn Refer Bonus Easily ✨🤑.", reply_markup=all_platform)
         return
 
     msg2 = await JN.ask(message.from_user.id, "Choose number to bet", reply_markup=keyboard2)
@@ -89,7 +89,7 @@ async def football(bot, message):
         return
 
     if balance < amount:
-        await message.reply_text("Insufficient balance. Please enter a valid amount.", reply_markup=all_platform)
+        await message.reply_text("Insufficient balance. Share With Your Friend's & Family And Earn Refer Bonus Easily ✨🤑.", reply_markup=all_platform)
         return
 
     # Roll the dice
