@@ -20,8 +20,8 @@ async def must_join_channel(bot: Client, msg):
             await bot.get_chat_member(UPDATE_CHNL, msg.from_user.id)
             await bot.get_chat_member(SUPPORT_GRP, msg.from_user.id)
             
-            caption = f"Hello {msg.from_user.mention}, \nI'm {JN.mention}\n\nɪ'ᴍ ᴘᴏᴡᴇʀꜰᴜʟ ʀᴇꜰᴇʀ ᴀɴᴅ ᴇᴀʀɴ ʙᴏᴛ, ʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by:<a href='https://t.me/JN_dev/'>JN Dev</a>"
-            caption2 = f"Hello {msg.from_user.mention},\n\n ʜᴇʏ ʟᴏᴏᴋ ʟɪᴋᴇ ʏᴏᴜ ᴀʀᴇ ɴᴇᴡ ʜᴇʀᴇ ᴏɴᴇ ʟɪᴛᴛʟᴇ ɢɪꜰᴛ ꜰʀᴏᴍ ᴍᴇ ʏᴏᴜ ᴊᴜꜱᴛ ɢᴏᴛ +1 ₹ ᴀꜱ ʙᴏɴᴜꜱ.\n Maintained by:<a href='https://t.me/Ak74400/'>AK</a>"
+            caption = f"Hello {msg.from_user.mention}, \nI'm {JN.mention}\n\n🏡 Welcome To UPI Giveaway Bot!, ʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by:<a href='https://t.me/Ak74400/'>AK</a>"
+            caption2 = f"Hello {msg.from_user.mention},\n\n ʜᴇʏ ʟᴏᴏᴋ ʟɪᴋᴇ ʏᴏᴜ ᴀʀᴇ ɴᴇᴡ ʜᴇʀᴇ ᴏɴᴇ ʟɪᴛᴛʟᴇ ɢɪꜰᴛ ꜰʀᴏᴍ ᴍᴇ ʏᴏᴜ ᴊᴜꜱᴛ ɢᴏᴛ +2 ₹ ᴀꜱ ʙᴏɴᴜꜱ.\n Maintained by:<a href='https://t.me/Ak74400/'>AK</a>"
 
             if is_new_user(msg.from_user.id):
                 add_default_balance(msg.from_user.id)
@@ -30,7 +30,7 @@ async def must_join_channel(bot: Client, msg):
                 await asyncio.sleep(1)
                 await j.delete()
                 await JN.send_photo(msg.chat.id, photo=start_img2, caption=caption, reply_markup=main_button)
-                await JN.send_message(msg.chat.id, text="Hey you just got +1₹ in your account as a new user bonus")
+                await JN.send_message(msg.chat.id, text="Hey you just got +2₹ in your account as a new user bonus")
                 await JN.send_message(log_channel, text=f"🦋 #newuser 🦋,\n\n**ID** : `{msg.from_user.id}`\n**Name**: {msg.from_user.first_name}\n **refer by:** No one")
             else:
                 j = await msg.reply_sticker("CAACAgUAAxkBAAECPc9mA9nqb8a0d0ziqad0mrNlleIXXAAC0w4AAudpIVTD64tNd-x1Xx4E")
@@ -68,7 +68,7 @@ async def must_join_channel(bot: Client, msg):
             try:
                 await msg.reply_photo(
                     photo=START_IMG,
-                    caption='»<b>ᴅᴜᴇ ᴛᴏ ʜɪɢʜ ꜱᴇʀᴠᴇʀ ʟᴏᴀᴅ ᴏɴʟʏ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴍᴇᴍʙᴇʀꜱ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ☺️! ᴛʜᴇɴ ᴄʟɪᴄᴋ /start </b>',
+                    caption='»<b>👋 Hey There User Welcome To Bot !🛑 Must Join Total Channel To Use Our Bot 💣 After Joining Click Claim </b>',
                     parse_mode=ParseMode.HTML,   
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -83,7 +83,7 @@ async def must_join_channel(bot: Client, msg):
 @JN.on_message(filters.regex('〄 ᴍᴀɪɴ ᴍᴇɴᴜ 〄') & filters.private)
 async def main_menu_handler(bot, message):
     
-    caption = f"Hello {message.from_user.first_name},\n\nɪ'ᴍ ᴘᴏᴡᴇʀꜰᴜʟ ʀᴇꜰᴇʀ ᴀɴᴅ ᴇᴀʀɴ ʙᴏᴛ, ʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by: <a href='https://t.me/jn_dev/'>JN Dev</a>"
+    caption = f"Hello {message.from_user.first_name},\n\n🏡 Welcome To UPI Giveaway Bot!, ʜᴇʀᴇ ʏᴏᴜ cᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by: <a href='https://t.me/Ak74400/'>AK</a>"
     
     await JN.send_photo(message.chat.id, photo=start_img2, caption=caption, reply_markup=main_button)
     await message.delete()
