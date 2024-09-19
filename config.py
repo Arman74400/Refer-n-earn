@@ -67,7 +67,7 @@ main_button = ReplyKeyboardMarkup(
 
 all_platform = ReplyKeyboardMarkup(
         [
-        [KeyboardButton("⚽️ ꜰᴏᴏᴛʙᴀʟʟ "), KeyboardButton("ᴅɪᴄᴇ ɢᴀᴍᴇ 🥳"))],
+        [KeyboardButton("⚽️ ꜰᴏᴏᴛʙᴀʟʟ "), KeyboardButton("ᴅɪᴄᴇ ɢᴀᴍᴇ 🥳")],
             [ KeyboardButton("〄 ᴍᴀɪɴ ᴍᴇɴᴜ 〄")]
         ],
         resize_keyboard=True
