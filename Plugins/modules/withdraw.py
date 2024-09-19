@@ -21,7 +21,7 @@ async def withdrawal(bot, message):
         return
 
     if amount > balance:
-        await message.reply_text("Insufficient balance. Share With Your Friend's & Family And Earn Refer Bonus Easily ✨🤑.", reply_markup=referral_link)
+        await message.reply_text("Insufficient balance. Share With Your Friend's & Family And Earn Refer Bonus Easily ✨🤑.", reply_markup=main_button)
         return
     if amount < WITHDRAWAL:
         await message.reply_text(f"Minimum balance require {WITHDRAWAL}INR.", reply_markup=main_button)
