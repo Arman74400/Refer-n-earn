@@ -31,7 +31,7 @@ MONGO_DB_URI:str = os.environ.get(
 	
 
 # all channels list you can add more 
-links = ["https://t.me/Crypto_Loot_AK", "https://t.me/Looters_Money_Trick", "https://t.me/myank_Real_Earn"]
+links = ["https://t.me/Crypto_Loot_AK", "https://t.me/Looters_Money_Trick", "https://t.me/myank_Real_Earn", "https://t.me/Earning_Loots08"]
 
 
 
