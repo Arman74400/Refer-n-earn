@@ -20,7 +20,7 @@ async def must_join_channel(bot: Client, msg):
             await bot.get_chat_member(UPDATE_CHNL, msg.from_user.id)
             await bot.get_chat_member(SUPPORT_GRP, msg.from_user.id)
             
-            caption = f"Hello {msg.from_user.mention}, \nI'm {JN.mention}\n\n🏡 Welcome To UPI Giveaway Bot!, ʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by:<a href='https://t.me/Ak74400/'>AK</a>"
+            caption = f"Hello {msg.from_user.mention}, \nI'm {JN.mention}\n\n🏡 Welcome To UPI Giveaway Bot!\n\nʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ  ᴇᴀʀɴ ʙʏ ʀᴇꜰᴇʀ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴇᴀʀɴ ʙʏ ʙᴇᴛꜱ .\n\nMaintained by:<a href='https://t.me/Ak74400/'>AK</a>"
             caption2 = f"Hello {msg.from_user.mention},\n\n ʜᴇʏ ʟᴏᴏᴋ ʟɪᴋᴇ ʏᴏᴜ ᴀʀᴇ ɴᴇᴡ ʜᴇʀᴇ ᴏɴᴇ ʟɪᴛᴛʟᴇ ɢɪꜰᴛ ꜰʀᴏᴍ ᴍᴇ ʏᴏᴜ ᴊᴜꜱᴛ ɢᴏᴛ +2 ₹ ᴀꜱ ʙᴏɴᴜꜱ.\n Maintained by:<a href='https://t.me/Ak74400/'>AK</a>"
 
             if is_new_user(msg.from_user.id):
@@ -68,7 +68,7 @@ async def must_join_channel(bot: Client, msg):
             try:
                 await msg.reply_photo(
                     photo=START_IMG,
-                    caption='»<b>👋 Hey There User Welcome To Bot !🛑 Must Join Total Channel To Use Our Bot 💣 After Joining Click Claim </b>',
+                    caption='»<b>👋 Hey There User Welcome To Bot !\n\n🛑 Must Join Total Channel To Use Our Bot\n\n💣 After Joining Click Claim </b>',
                     parse_mode=ParseMode.HTML,   
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
